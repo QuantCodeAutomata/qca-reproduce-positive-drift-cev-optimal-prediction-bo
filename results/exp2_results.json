@@ -1,0 +1,31 @@
+{
+  "experiment": "exp2_negative_drift",
+  "parameters": {
+    "mu": -0.15,
+    "sigma": 0.3,
+    "beta": 0.7,
+    "lambda": 2.0,
+    "T": 1.0,
+    "N": 60
+  },
+  "expected": {
+    "gamma": 0.37414,
+    "b0": 0.3532,
+    "m": 0.34657
+  },
+  "computed": {
+    "gamma": 0.37413970510677974,
+    "m": 0.34657359027997264,
+    "b0": 0.35289504156400664,
+    "b_terminal": 0.37413970510677974
+  },
+  "checks": {
+    "G_integral_ok": true,
+    "reduction_identity_ok": true,
+    "density_norm_ok": true,
+    "H_sign_positive_between": true,
+    "H_sign_negative_above": true,
+    "b_non_decreasing": false,
+    "value_match_b0": true
+  }
+}

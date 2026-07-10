@@ -1,0 +1,41 @@
+{
+  "experiment": "exp1_positive_drift",
+  "parameters": {
+    "mu": 0.15,
+    "sigma": 0.3,
+    "beta": 0.7,
+    "lambda": 2.0,
+    "T": 1.0,
+    "N": 60
+  },
+  "expected": {
+    "alpha": 0.32581,
+    "a0": 0.34234,
+    "c0": 2.67449,
+    "m": 0.34657
+  },
+  "computed": {
+    "alpha": 0.32581339044454305,
+    "m": 0.34657359027997264,
+    "a0": 0.3426128704490044,
+    "c0": 2.648725642233395,
+    "a_terminal": 0.32581339044454305,
+    "c_terminal": 25.0
+  },
+  "checks": {
+    "G_integral_ok": true,
+    "G_tail_ok": true,
+    "reduction_identity_ok": true,
+    "density_norm_ok": true,
+    "H_sign_positive": true,
+    "H_sign_negative": true,
+    "a_non_increasing": true,
+    "c_non_decreasing": true
+  },
+  "value_matching": {
+    "V_at_a0": -0.07670534084862406,
+    "G_at_a0": -0.0767053404571415,
+    "V_at_c0": 0.8268650153007862,
+    "G_at_c0": 0.8268649872597942
+  }
+}
